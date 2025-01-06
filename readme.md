@@ -1,1 +1,1 @@
-"#db-capstone-project" "Setting up repository for project"
+db-capstone-project "Setting up repository for project"
