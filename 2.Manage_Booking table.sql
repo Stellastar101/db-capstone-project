@@ -1,6 +1,5 @@
 DELIMITER //
-
-CREATE PROCEDURE CheckBooking(
+CREATE PROCEDURE ManageBooking(
     IN bookingDate DATE,
     IN tableNumber INT
 )
@@ -21,3 +20,5 @@ BEGIN
 END //
 
 DELIMITER ;
+
+
