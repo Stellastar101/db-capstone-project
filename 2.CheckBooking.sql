@@ -1,5 +1,5 @@
 DELIMITER //
-CREATE PROCEDURE ManageBooking(
+CREATE PROCEDURE CheckBooking(
     IN bookingDate DATE,
     IN tableNumber INT
 )
@@ -14,11 +14,11 @@ BEGIN
     WHERE BookingDate = bookingDate 
     AND TableNumber = tableNumber;
     
-    SELECT CONCAT('Table ', tableNumber, ' on ', 
-           DATE_FORMAT(bookingDate, '%Y-%m-%d'), 
-           ' is ', tableStatus) AS 'Booking Status';
+    SELECT CONCAT('Table ', tableNumber, ' on ', DATE_FORMAT(bookingDate, '%Y-%m-%d'), ' is ', tableStatus)
+    AS 'Booking Status';
 END //
 
 DELIMITER ;
+
 
 
